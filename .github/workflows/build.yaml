@@ -28,3 +28,4 @@ jobs:
           mvn package
           docker build --tag verfluchtezocke/pet-clinic:latest -f Dockerfile .
           docker login -u verfluchtezocke -p $DOCKERHUB_TOKEN
+          docker image push verfluchtezocke/pet-clinic:latest
